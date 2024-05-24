@@ -1,0 +1,54 @@
+body {
+    background-color: #000; /* Change the background color of the page to black */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 100%; /* Set each project card to occupy full width */
+    margin-bottom: 20px; /* Add margin between project cards */
+    background-color: #111; /* Change the background color of the cards to a shade of light black */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Add green neon glowing shadow to the cards */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h2 {
+    margin-top: 0;
+}
+
+.project-info p {
+    margin: 10px 0;
+}
+
+.tech-stack {
+    font-style: italic;
+    color: #666666;
+}
+.project-info h2 {
+    margin-top: 0;
+    color: #00FF00; /* Neon green text color for the heading */
+}
+
+.tech-stack {
+    font-style: italic;
+    color: #FFFFFF; /* White text color for the tech stack */
+}
+
+.project-info .description {
+    color: #FFFFFF; /* White text color for the description */
+}

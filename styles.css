@@ -1,0 +1,177 @@
+/* Ensure the body takes up the full height of the viewport */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: black; /* Set background color to black */
+}
+
+/* Set the title to take up 30% and boxes to take up 70% of the page */
+.title {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Craftsman-style color */
+    color: #c5e651;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Set the boxes section to take up 70% of the page */
+.boxes {
+    height: 70%;
+    position: relative; /* Enable positioning for children */
+    background-color: black; /* Light background for the section */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Style each box */
+.box {
+    position: absolute; /* Position boxes relative to the parent */
+    background-color: white; /* White background for contrast */
+    border: 2px solid; /* Light border for each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the content inside each box */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transform on hover */
+    border-radius: 30px;
+}
+
+/* Add a hover effect to the boxes */
+.box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Define styles for individual boxes */
+.box1 {
+    background-color: #4972e8;
+    width: 50%; /* Set width of box 1 */
+    height: 90%; /* Set height of box 1 */
+    top: 5%; /* Position from the top */
+    left: 2%; /* Position from the left */
+}
+
+.box2 {
+    background-color: #FFF480;
+    width: 45%; /* Set width of box 2 */
+    height: 40%; /* Set height of box 2 */
+    top: 5%; /* Position from the top */
+    left: 53%; /* Position from the right */
+}
+
+.box3 {
+    background-color: #E88C01;
+    width: 23%; /* Set width of box 3 */
+    height: 46%; /* Set height of box 3 */
+    bottom: 4%; /* Position from the bottom */
+    left: 53%; /* Position from the left */
+}
+
+.box4 {
+    width: 21%; /* Set width of box 3 */
+    height: 46%; /* Set height of box 3 */
+    bottom: 4%; /* Position from the bottom */
+    left: 77%; /* Position from the right */
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.contact-icon {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #000; /* Adjust the color as needed */
+    text-decoration: none;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s; /* Smooth transitions */
+}
+
+.contact-icon:hover {
+    color: #0073b1; /* Adjust the hover color as needed */
+    transform: scale(1.1); /* Slightly increase size on hover */
+    text-shadow: 0 0 10px rgba(0, 115, 177, 0.7), 0 0 20px rgba(0, 115, 177, 0.4); /* Glow effect */
+}
+
+.contact-icon i {
+    margin-bottom: 5px; /* Adjust the margin between the icon and text */
+}
+
+.contact-icon span {
+    font-size: 22px; /* Adjust the font size as needed */
+}
+
+/* Add this CSS to your styles.css file */
+.title h1.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Center the text horizontally */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    width: 19.2ch; /* Set the width to match the final width of the text */
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 19.2ch } /* Adjust the width to match the final width of the text */
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.redirect-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s; /* Smooth transitions */
+}
+
+.redirect-link:hover {
+    color: #a4ffaf; /* Change color on hover */
+    transform: scale(1.03); /* Slightly increase size on hover */
+    text-shadow: 0 0 10px rgba(164, 255, 175, 0.7), 0 0 20px rgba(164, 255, 175, 0.4); /* Glow effect */
+}
+
+.redirect-link i {
+    font-size: 2em;
+    margin-top: 10px;
+    animation: glow 2s infinite alternate; /* Apply the glow animation */
+}
+
+.box3 .custom-icon {
+    font-size: 2em; /* Adjust the size of the icon */
+    margin-left: 20px; /* Adjust the spacing between the text and the icon */
+    margin-top: 11px;
+    animation: glow 2s infinite alternate; /* Apply the glow animation */
+}
+
+.about {
+    font-size: 22px;
+    color: #fff; /* Ensure the about text is readable against the background */
+}
+
+/* Define the glow animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+    }
+}

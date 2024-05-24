@@ -1,0 +1,110 @@
+/* Set the background color of the whole page to black */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+/* Container for both skills and experience sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff073a; /* Neon red glow */
+    overflow: hidden; /* Ensure rounded corners */
+}
+
+/* Styles for the skills section container */
+.skills-container {
+    color: white;
+    /* border: 5px solid #ff073a; Neon red border */
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 60px; /* Increased margin-bottom for more gap */
+}
+
+/* Styles for the skills section */
+.skills-section {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styles for the individual skill items */
+.skills-section li {
+    width: calc(25% - 20px);
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Styles for the Font Awesome icons */
+.skills-section i {
+    font-size: 2em;
+    color: #ff073a; /* Neon red color for icons */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills-section li:hover i {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ff073a, 0 0 20px #ff073a, 0 0 30px #ff073a, 0 0 40px #ff073a;
+}
+
+.skills-section li:hover {
+    color: #ff073a;
+}
+
+/* Styles for the experience section container */
+.experience-container {
+    color: white;
+    /* border: 5px solid #ff073a; */
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px; /* Increased margin-top for more gap */
+}
+
+/* Styles for the experience section */
+.experience-section {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for individual experience items */
+.experience-section li {
+    margin-bottom: 30px;
+}
+
+.experience-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.experience-section p {
+    font-size: 1.2em;
+    color: #ff073a;
+}
+
+
+.cgap{
+    margin: 40px;
+}
